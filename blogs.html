@@ -2,68 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Daily Blog Archive</title>
+  <title>Daniel's Blog</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Space Mono', monospace;
-      background: #f9f9f9;
-      color: #111;
-      max-width: 700px;
+    .content {
+      max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
-      line-height: 1.6;
     }
 
     h1 {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 30px;
-      text-align: center;
     }
 
-    ul.blog-list {
-      list-style: none;
-      padding: 0;
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
-    ul.blog-list li {
-      margin-bottom: 18px;
-    }
-
-    ul.blog-list a {
-      color: #222;
+    .blog-card {
       text-decoration: none;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 2px;
+      color: inherit;
     }
 
-    ul.blog-list a:hover {
-      color: #0055ff;
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
     }
 
-    .date {
-      color: #888;
-      font-size: 14px;
+    .blog-date {
+      font-size: 13px;
+      color: #7b7b7b;
+      margin-bottom: 4px;
+    }
+
+    .blog-title {
+      font-size: 15px;
+    }
+
+    .blog-card:hover .blog-title {
+      text-decoration: underline;
+    }
+
+    .back-link {
       display: inline-block;
-      width: 160px;
+      margin: 40px 0 0;
+      font-size: 14px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Daily Blog Archive</h1>
+  <header class="top-bar">
+    <div class="nav-container">
+      <div class="site-title">
+        <a href="index.html">Daniel Pham</a>
+      </div>
+      <nav class="top-nav">
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blog</a>
+        <a href="CyberSecurityBlog/post1.html">CyberSec</a>
+      </nav>
+    </div>
+  </header>
 
-  <ul class="blog-list">
-    <li><span class="date">April 19, 2025</span> <a href="DailyBlogs/post1.html">Alta 4/19/25</a></li>
-    <li><span class="date">February 23, 2025</span> <a href="DailyBlogs/post4.html">USTA Mobile, Al 2/23/25</a></li>
-    <li><span class="date">September 21, 2024</span> <a href="DailyBlogs/post2.html">USTA TOC 9/21/24</a></li>
-    <li><span class="date">April 12, 2024</span> <a href="DailyBlogs/post3.html">We Started A Tennis Club?</a></li>
+  <div class="content">
+    <h1>Daily Blog</h1>
 
-    <!-- Add more entries here -->
-  </ul>
+    <div class="blog-grid">
+      <a href="DailyBlogs/post1.html" class="blog-card">
+        <img src="images/IMG_4444.jpg" alt="Alta Match">
+        <div class="blog-date">April 19, 2025</div>
+        <div class="blog-title">Alta 4/19/25</div>
+      </a>
+
+      <a href="DailyBlogs/post4.html" class="blog-card">
+        <img src="images/22325.jpg" alt="USTA Tournament">
+        <div class="blog-date">February 23, 2025</div>
+        <div class="blog-title">USTA TOC Mobile, AL 2/23/25</div>
+      </a>
+
+      <a href="DailyBlogs/post2.html" class="blog-card">
+        <img src="images/IMG_2820.jpg" alt="TOC Team Photo">
+        <div class="blog-date">September 21, 2024</div>
+        <div class="blog-title">USTA TOC 9/21/24</div>
+      </a>
+
+      <a href="DailyBlogs/post3.html" class="blog-card">
+        <img src="images/IMG_5099.jpg" alt="Club officers">
+        <div class="blog-date">April 12, 2024</div>
+        <div class="blog-title">We Started A Tennis Club?</div>
+      </a>
+    </div>
+
+    <a class="back-link" href="index.html">&larr; Back to Home</a>
+  </div>
 
 </body>
-<a class="back-link" href="index.html">&larr; Back to Home</a>
-    </a>
-  </p>
 </html>

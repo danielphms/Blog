@@ -2,82 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact</title>
+  <title>About - Daniel Pham</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Courier New', monospace;
-      background: #fafafa;
-      color: #222;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    .container {
+    .about-container {
       display: flex;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      margin: auto;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 40px;
     }
-    .left {
-      flex: 1 1 300px;
-      margin-right: 2rem;
+
+    .about-column {
+      flex: 1;
     }
-    .left img {
+
+    .about-column img {
       width: 100%;
       max-width: 300px;
-      border-radius: 6px;
+      border-radius: 8px;
     }
-    .right {
-      flex: 2 1 500px;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+
+    .about-text {
+      font-size: 15px;
+      line-height: 1.6;
     }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+
+    .contact h2 {
+      margin-bottom: 10px;
     }
-    a {
-      color: #7a39d0;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 1rem;
-    }
+
     .back-link {
-      margin-top: 2rem;
       display: inline-block;
-      color: #555;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left">
-      <img src="images/IMG_4171.jpg" alt="Your Photo" />
+  <header class="top-bar">
+    <div class="nav-container">
+      <div class="site-title">
+        <a href="index.html">Daniel Pham</a>
+      </div>
+      <nav class="top-nav">
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blog</a>
+        <a href="CyberSecurityBlog/post1.html">CyberSec</a>
+      </nav>
     </div>
-    <div class="right">
-      <div class="section">
-        <h1>Info / Contact</h1>
-        <p><strong>Name:</strong> Daniel Pham</p>
-        <p><strong>Email:</strong> <a href="mailto:dmpham3335@ung.edu">dmpham3335@ung.edu</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/danielphms" target="_blank">github.com/danielphms</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/danielpham01/" target="_blank">linkedin.com/in/danielpham01</a></p>
-      </div>
+  </header>
 
-      <div class="section">
-        <h1>Connect</h1>
-        <p>
-          <a href="https://www.instagram.com/danielphms/" target="_blank">Instagram</a> /
-          <a href="https://x.com/danoducky" target="_blank">Twitter</a> /
-        </p>
-      </div>
+  <div class="about-container">
+    <div class="about-column">
+      <img src="images/IMG_4171.jpg" alt="Daniel Pham photo" />
+    </div>
 
+    <div class="about-column">
+      <h2>About Me</h2>
+      <p class="about-text">
+        Hi! I'm Daniel, a cybersecurity major at the University of North Georgia. 
+        This site is my little corner of the internet where I share what I'm working on, 
+        thoughts from day to day, and anything else I find interesting. 
+        Whether it’s a new project, a random idea, or just life updates, you’ll find it all here.
+      </p>
       <a class="back-link" href="index.html">&larr; Back to Home</a>
+
+    </div>
+
+    <div class="about-column contact">
+      <h2>Info / Contact</h2>
+      <p><strong>Name:</strong> Daniel Pham</p>
+      <p><strong>Email:</strong> <a href="mailto:dmpham3335@ung.edu">dmpham3335@ung.edu</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/danielphms" target="_blank">github.com/danielphms</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/danielpham01/" target="_blank">linkedin.com/in/danielpham01</a></p>
+    
     </div>
   </div>
 </body>

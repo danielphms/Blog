@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Daniel Pham</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="top-bar">
-        <div class="site-title">Daniel Pham</div>
-        <nav class="top-nav">
-          <a href="about.html">About</a>
-          <a href="blogs.html">Blog</a>
-          <a href="CyberSecurityBlog/post1.html">CyberSec</a>
-        </nav>
-      </header>
-      
+  <header class="top-bar">
+    <div class="nav-container">
+      <div class="site-title">
+        <a href="index.html">Daniel Pham</a>
+      </div>
+      <nav class="top-nav">
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blog</a>
+        <a href="CyberSecurityBlog/post1.html">CyberSec</a>
+      </nav>
+    </div>
+  </header>
 
   <section class="hero">
-    <img src="images/mainphoto.png" alt="Profile">
-    <p>Currently WIP<br>Cybersecurity • Daily Thoughts • Life Logs</p>
+    <img src="images/mainphoto.png" alt="Profile"/>
+    <p>Currently WIP<br />Cybersecurity • Daily Thoughts • Life Logs</p>
   </section>
 
   <main>
-    <section>
-      <h2>Latest Daily Blogs <a href="DailyBlogs/post1.html">>>></a></h2>
-      <div class="grid">
-        <a href="DailyBlogs/post1.html" class="card">
-          <img src="images/IMG_4444.jpg" alt="Post image">
-          <p><small>April 19, 2025</small><br>Alta 4/19/25</p>
-        </a>
-        <a href="DailyBlogs/post2.html" class="card">
-          <img src="images/IMG_2820.jpg" alt="Post image">
-          <p><small>September 21, 2024</small><br>USTA TOC 9/21/24</p>
-        </a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Cybersecurity Blog <a href="CyberSecurityBlog/post1.html">>>></a></h2>
-      <div class="grid">
-        <a href="CyberSecurityBlog/post1.html" class="card">
-          <img src="images/cyber1.jpg" alt="Cyber image">
-          <p><small>April 20, 2025</small><br>Reverse engineering XOR</p>
-        </a>
-        <a href="CyberSecurityBlog/post2.html" class="card">
-          <img src="images/cyber2.jpg" alt="Cyber image">
-          <p><small>April 18, 2025</small><br>HTB challenge write-up</p>
-        </a>
-      </div>
-    </section>
+    <div class="container">
+      <section>
+        <h2>Latest Daily Blogs <a href="blogs.html">>>></a></h2>
+        <div class="grid">
+          <a href="DailyBlogs/post1.html" class="card">
+            <img src="images/IMG_4444.jpg" alt="Post image" />
+            <p><small>April 19, 2025</small><br />Alta 4/19/25</p>
+          </a>
+          <a href="DailyBlogs/post2.html" class="card">
+            <img src="images/IMG_2820.jpg" alt="Post image" />
+            <p><small>September 21, 2024</small><br />USTA TOC Orlando, FL 9/21/24</p>
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p>© 2025 Daniel Pham</p>
-  </footer>
 </body>
 </html>
