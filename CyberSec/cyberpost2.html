@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Homelab Setup WIP</title>
+  <title>I Built my first homelab</title>
   <link rel="stylesheet" href="../style.css">
   <style>
     body {
       padding: 40px 20px;
-      max-width: 75a0px;
+      max-width: 750px;
       margin: auto;
       line-height: 1.7;
     }
@@ -53,7 +53,51 @@
 
   <header>Daniel Pham</header>
 
+  <h1>I Built my first homelab</h1>
+  <div class="date">May 6, 2025</div>
 
+  <img src="../images/homelab.jpg" alt="homelab">
+
+  <p>
+    This project started with me trying to revive an old desktop I found. It's was a Windows XP from 2006 that my brother had in his room. I had dreams of turning
+    it into a lightweight server. It almost worked… until I realized the BIOS didn’t support USB booting 😩. My only option was to burn a DVD. 
+    I stared at the DVD drive. It stared back. I gave up. So I pivoted to a Raspberry Pi 4, and honestly, it was the better call.
+  </p>
+  <br>
+
+  <h3>Hardware Setup:</h3>
+
+  <ul>
+    <li>Raspberry Pi 4 Model B</li>
+    <li>Micro SSD but using a USB to boot 
+    <li>External HDD for storage 
+    <li>Unmanaged Ethernet Switch (TP-Link TL-SG105)
+    <li>Powerline adapter (TP-Link AV1000)
+  </ul>
+  <br>
+
+  <h3>My Problems:</h3>
+
+  <p>
+    My room is a wifi deadzone, so I used to powerline adapter that I already had and pluged it into the switch. Now, the switch is being used to connect ethernet to my 
+    RaspberryPi and main desktop. Setting this up wasn’t easy. First, the boot didn’t actually clone correctly from the USB to SSD, so the Pi would just vanish from the network 
+    when I unplug the USB. 
+  </p>
+  <strong>Before:</strong>
+  <img src="../images/homelab1.jpg" alt="homelab" style="display: block; margin-top: 0.3em; max-width: 100%; border-radius: 8px;">
+  <strong>After:</strong>
+  <img src="../images/homelab2.jpg" alt="homelab" style="display: block; margin-top: 0.3em; max-width: 100%; border-radius: 8px;">
+
+  <h3>What’s Next?:</h3>
+  <ul>
+    <li>I want to host this site on the RaspberryPi</li>
+    <li>Container more apps via Portainer</li>
+    <li>Maybe circling back to that old XP machine… someday.😭</li>
+  </ul>
+  <img src="../images/homelab3.jpg" alt="homelab">
+  <p>
+    Final look of what my homelab looks like. The HDD isnt connected because its the wrong cable. 😁
+  </p>
   <a class="back-link" href="../cyber.html">&larr; Back</a>
 
 </body>
