@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Space Mono', monospace;
   background: #f9f9f9;
   color: #111;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
